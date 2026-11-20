@@ -77,6 +77,9 @@ When `senseigammon.co.uk` is ready:
 
 No code changes are needed because every link is relative.
 
+### Content editing (Pages CMS)
+`.pages.yml` in the repo root configures [Pages CMS](https://pagescms.org): one form per JSON file in `content/`, with PDFs uploaded to `printables/`. `settings.content: true` merges on save, so keys that aren't in the schema are kept. The site's JavaScript accepts list fields (such as `ages` and `options`) either as arrays or as comma-separated strings, and strips a leading `/` from PDF paths, so the site keeps working with either save format. If you add a field to a JSON file, add it to `.pages.yml` too.
+
 ### Buy Me a Coffee
 The username lives in one place: `content/site.json` → `"buyMeACoffeeUsername"`. It is currently the placeholder `BMC_USERNAME`. It's a plain link, not their widget script.
 
@@ -84,6 +87,24 @@ The username lives in one place: `content/site.json` → `"buyMeACoffeeUsername"
 
 ## Part 2: For the teacher (adding content)
 
+There are two ways to add content. **Option A (Pages CMS) is the easiest**: you fill in simple forms and don't need to touch any code.
+
+### Option A: Pages CMS (recommended)
+1. Go to **https://app.pagescms.org** and click **Sign in with GitHub**.
+2. The first time, it asks to install the Pages CMS app. Allow it for the **senseigammon** repository.
+3. Open **senseigammon**. On the left you'll see **Riddles**, **Quick-fire quiz**, **Word scramble**, **Would you rather**, **Odd one out**, **Emoji puzzles**, **Printables**, **Homepage cards** and **Site settings**.
+4. Click one, for example **Riddles**. Scroll to the bottom and click **Add an entry** (or the **+** button). Fill in the riddle, the answer and tick the age bands.
+5. Click **Save**. That's it. The website updates by itself in a minute or two.
+
+**Adding a printable:** open **Printables** and add an entry. In the **PDF file** box, upload your PDF (it goes into the `printables` folder automatically), fill in the title and age bands, and save.
+
+Tips:
+- Every entry needs at least one age band ticked.
+- In **Odd one out**, the answer must be spelled exactly like one of the four items.
+- **Homepage cards** and **Site settings** change how the site works. Only change them if you're sure.
+- Made a mistake? Every save is kept in the history on GitHub, so nothing is ever lost.
+
+### Option B: edit the files directly on github.com
 You don't need any special software. You can do everything on **github.com** in your web browser.
 
 ### How to edit a file on GitHub
