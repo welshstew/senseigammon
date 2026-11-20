@@ -1,0 +1,214 @@
+{
+  "items": [
+    {
+      "emojis": "🌧️🐱🐶",
+      "answer": "Raining cats and dogs",
+      "hint": "Very heavy rain",
+      "ages": [
+        "8-11",
+        "11-14",
+        "14-17"
+      ]
+    },
+    {
+      "emojis": "⏰💰",
+      "answer": "Time is money",
+      "hint": "Don’t waste it!",
+      "ages": [
+        "11-14",
+        "14-17"
+      ]
+    },
+    {
+      "emojis": "🍰🚶",
+      "answer": "A piece of cake",
+      "hint": "Something really easy",
+      "ages": [
+        "8-11",
+        "11-14"
+      ]
+    },
+    {
+      "emojis": "🐦🐦🪨",
+      "answer": "Kill two birds with one stone",
+      "hint": "Doing two jobs at once",
+      "ages": [
+        "11-14",
+        "14-17"
+      ]
+    },
+    {
+      "emojis": "🍎📅👨‍⚕️❌",
+      "answer": "An apple a day keeps the doctor away",
+      "hint": "Healthy eating saying",
+      "ages": [
+        "8-11",
+        "11-14"
+      ]
+    },
+    {
+      "emojis": "🐱👜⬆️",
+      "answer": "Let the cat out of the bag",
+      "hint": "Giving away a secret",
+      "ages": [
+        "11-14",
+        "14-17"
+      ]
+    },
+    {
+      "emojis": "🧊🔨",
+      "answer": "Break the ice",
+      "hint": "Getting a conversation started",
+      "ages": [
+        "8-11",
+        "11-14",
+        "14-17"
+      ]
+    },
+    {
+      "emojis": "🌙🔵",
+      "answer": "Once in a blue moon",
+      "hint": "Something that happens very rarely",
+      "ages": [
+        "11-14",
+        "14-17"
+      ]
+    },
+    {
+      "emojis": "🐘🏠",
+      "answer": "The elephant in the room",
+      "hint": "An obvious problem nobody talks about",
+      "ages": [
+        "14-17"
+      ]
+    },
+    {
+      "emojis": "🌱👀🟢",
+      "answer": "Green with envy",
+      "hint": "Feeling jealous",
+      "ages": [
+        "11-14",
+        "14-17"
+      ]
+    },
+    {
+      "emojis": "🐦🌅🪱",
+      "answer": "The early bird catches the worm",
+      "hint": "Get up early for the best chance",
+      "ages": [
+        "8-11",
+        "11-14"
+      ]
+    },
+    {
+      "emojis": "🥚🥚🥚🧺1️⃣",
+      "answer": "Don’t put all your eggs in one basket",
+      "hint": "Don’t risk everything on one thing",
+      "ages": [
+        "14-17"
+      ]
+    },
+    {
+      "emojis": "🎻🏋️",
+      "answer": "Fit as a fiddle",
+      "hint": "Very healthy",
+      "ages": [
+        "11-14",
+        "14-17"
+      ]
+    },
+    {
+      "emojis": "👀👀",
+      "answer": "See eye to eye",
+      "hint": "To agree with someone",
+      "ages": [
+        "11-14",
+        "14-17"
+      ]
+    },
+    {
+      "emojis": "🌧️☂️☀️",
+      "answer": "Every cloud has a silver lining",
+      "hint": "Something good can come from something bad",
+      "ages": [
+        "14-17"
+      ]
+    },
+    {
+      "emojis": "🍳👨‍🍳👨‍🍳👨‍🍳🍲",
+      "answer": "Too many cooks spoil the broth",
+      "hint": "Too many people working on one thing",
+      "ages": [
+        "14-17"
+      ]
+    },
+    {
+      "emojis": "🐟🏜️",
+      "answer": "Like a fish out of water",
+      "hint": "Feeling out of place",
+      "ages": [
+        "8-11",
+        "11-14"
+      ]
+    },
+    {
+      "emojis": "😴🐕🐕",
+      "answer": "Let sleeping dogs lie",
+      "hint": "Leave a problem alone",
+      "ages": [
+        "14-17"
+      ]
+    },
+    {
+      "emojis": "🏃‍♂️💨🐢🏆",
+      "answer": "Slow and steady wins the race",
+      "hint": "From a famous fable about a tortoise",
+      "ages": [
+        "8-11",
+        "11-14"
+      ]
+    },
+    {
+      "emojis": "💡💡",
+      "answer": "Two heads are better than one",
+      "hint": "Teamwork helps",
+      "ages": [
+        "8-11",
+        "11-14"
+      ]
+    },
+    {
+      "emojis": "🌈🏺💰",
+      "answer": "A pot of gold at the end of the rainbow",
+      "hint": "Treasure from Irish folklore",
+      "ages": [
+        "8-11",
+        "11-14"
+      ]
+    },
+    {
+      "emojis": "🦁🍰🍰🍰",
+      "answer": "The lion’s share",
+      "hint": "The biggest part",
+      "ages": [
+        "14-17"
+      ]
+    },
+    {
+      "emojis": "👖🔥",
+      "answer": "Liar, liar, pants on fire",
+      "hint": "A playground rhyme about fibbing",
+      "ages": [
+        "8-11"
+      ]
+    },
+    {
+      "emojis": "😁🐻",
+      "answer": "Grin and bear it",
+      "hint": "Put up with something you don’t like",
+      "ages": [
+        "14-17"
+      ]
+    }
+  ]
+}

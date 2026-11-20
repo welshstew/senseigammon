@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sensei Gammon — quick, fun classroom fillers</title>
+  <meta name="description" content="Free, quick and fun classroom time-fillers for UK teachers. Riddles, word scrambles, quizzes and more — ready on your whiteboard in one click.">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <!--
+    CUSTOM DOMAIN NOTE: when senseigammon.co.uk is ready, add a file called CNAME
+    (no extension) to the root of the repo containing the single line:
+        senseigammon.co.uk
+    then set the custom domain in GitHub → Settings → Pages. All links on this
+    site are relative, so nothing else needs to change. See README.md.
+  -->
+  <script src="js/site.js" defer></script>
+  <script src="js/home.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <!-- MASCOT PLACEHOLDER: swap this circle for the Sensei Gammon character later -->
+        <span class="mascot-slot" aria-hidden="true">Sensei</span>
+        <span>Sensei <span class="brand-accent">Gammon</span></span>
+      </a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html" aria-current="page">Fillers</a></li>
+          <li><a href="index.html#tools">Tools</a></li>
+          <li><a href="printables.html">Printables</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap">
+        <!-- MASCOT PLACEHOLDER (hero): replace with the full-size character artwork later -->
+        <div class="mascot-slot mascot-slot--hero" aria-hidden="true">Sensei</div>
+        <div>
+          <h1 id="hero-title">Quick, fun classroom fillers — ready in one click.</h1>
+          <p class="lead">Got a few spare minutes? Pick a filler, pop it on the whiteboard, and you’re away. Free for teachers, for ages 8–17.</p>
+          <div class="random-row">
+            <button type="button" class="btn btn--coral btn--huge" id="random-btn">🎲 Random filler</button>
+            <p class="random-note" id="random-note" aria-live="polite"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap">
+      <section aria-labelledby="filters-title">
+        <h2 id="filters-title" class="visually-hidden">Filter the fillers</h2>
+        <div class="filters" id="filters">
+          <!-- Filter chips are built by js/home.js -->
+        </div>
+      </section>
+
+      <section aria-labelledby="list-title">
+        <div class="filters-bar">
+          <h2 id="list-title">Pick a filler</h2>
+          <p class="result-count" id="result-count" aria-live="polite"></p>
+          <button type="button" class="btn btn--ghost btn--small" id="clear-filters">Clear filters</button>
+        </div>
+        <ul class="card-grid" id="activity-grid">
+          <li><p>Loading fillers…</p></li>
+        </ul>
+      </section>
+
+      <section class="section" id="tools" aria-labelledby="tools-title">
+        <h2 id="tools-title">Classroom tools</h2>
+        <ul class="card-grid">
+          <li>
+            <article class="card">
+              <div class="card-emoji" aria-hidden="true">⏱️</div>
+              <h3><a href="timer.html">Countdown timer</a></h3>
+              <p>Big digits you can see from the back of the room, with 1, 2, 5 and 10 minute presets and a gentle chime.</p>
+            </article>
+          </li>
+          <li>
+            <article class="card">
+              <div class="card-emoji" aria-hidden="true">🙋</div>
+              <h3><a href="picker.html">Random name picker</a></h3>
+              <p>Paste your class list and let Sensei choose. Names are never saved — they vanish when you close the page.</p>
+            </article>
+          </li>
+          <li>
+            <article class="card">
+              <div class="card-emoji" aria-hidden="true">👥</div>
+              <h3><a href="teams.html">Team generator</a></h3>
+              <p>Split your class into fair, random teams in a click. Choose how many teams or how many per team.</p>
+            </article>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <a class="coffee-btn" data-coffee href="https://buymeacoffee.com/BMC_USERNAME" target="_blank" rel="noopener">☕ Saved your lesson? Buy Sensei a coffee</a>
+      <ul class="footer-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="printables.html">Printables</a></li>
+      </ul>
+      <p class="footer-small">© <span id="year">2026</span> Sensei Gammon · Free for teachers · No cookies, no tracking, no data collected.</p>
+    </div>
+  </footer>
+</body>
+</html>

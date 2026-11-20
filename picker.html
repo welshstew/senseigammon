@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Random name picker — Sensei Gammon</title>
+  <meta name="description" content="Paste a class list and pick a name at random. Names are kept in memory only and never saved.">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/site.js" defer></script>
+  <script src="js/picker.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <!-- MASCOT PLACEHOLDER: swap this circle for the Sensei Gammon character later -->
+        <span class="mascot-slot" aria-hidden="true">Sensei</span>
+        <span>Sensei <span class="brand-accent">Gammon</span></span>
+      </a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Fillers</a></li>
+          <li><a href="index.html#tools">Tools</a></li>
+          <li><a href="printables.html">Printables</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap wrap--wide">
+      <div class="activity-top">
+        <a class="back-link" href="index.html">← Back to all fillers</a>
+        <h1 class="activity-title"><span aria-hidden="true">🙋</span> Random name picker</h1>
+        <span class="spacer"></span>
+        <button type="button" class="btn btn--ghost btn--small" id="fs-btn" aria-pressed="false">⛶ Fullscreen</button>
+      </div>
+
+      <div class="tool-grid">
+        <section class="panel" aria-labelledby="names-title">
+          <h2 id="names-title">Your class list</h2>
+          <label for="names">Paste names, one per line (or separated by commas)</label>
+          <textarea id="names" spellcheck="false" placeholder="Amira&#10;Ben&#10;Chloe&#10;Dev"></textarea>
+          <label class="check" for="remove-picked"><input type="checkbox" id="remove-picked" checked> Don’t pick the same person twice</label>
+          <div class="row">
+            <button type="button" class="btn btn--ghost btn--small" id="reset-picks">Put everyone back</button>
+            <button type="button" class="btn btn--ghost btn--small" id="clear-names">Clear list</button>
+          </div>
+          <p class="note">🔒 Names stay in this browser tab only. Nothing is saved or sent anywhere — they disappear when you close or refresh the page.</p>
+        </section>
+        <section class="stage" id="stage" aria-label="Picker">
+          <div class="board">
+            <p class="board-counter" id="pick-count"><span>Add some names to start</span></p>
+            <div class="board-body">
+              <p class="picked-name" id="picked" aria-live="polite">?</p>
+            </div>
+            <div class="controls">
+              <button type="button" class="btn btn--coral btn--huge" id="pick-btn">🎲 Pick a name</button>
+            </div>
+          </div>
+          <p class="kbd-hint"><kbd>Space</kbd> pick · <kbd>F</kbd> fullscreen</p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <a class="coffee-btn" data-coffee href="https://buymeacoffee.com/BMC_USERNAME" target="_blank" rel="noopener">☕ Saved your lesson? Buy Sensei a coffee</a>
+      <ul class="footer-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="printables.html">Printables</a></li>
+      </ul>
+      <p class="footer-small">© <span id="year">2026</span> Sensei Gammon · Free for teachers · No cookies, no tracking, no data collected.</p>
+    </div>
+  </footer>
+</body>
+</html>

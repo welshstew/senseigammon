@@ -1,0 +1,64 @@
+{
+  "items": [
+    {
+      "id": "riddles",
+      "title": "Riddles",
+      "emoji": "🤔",
+      "description": "Brain-teasing riddles for the whole class. Read it out, let them think, then reveal the answer.",
+      "minutes": ["2", "5", "10"],
+      "ages": ["8-11", "11-14", "14-17"],
+      "groups": ["class", "solo"],
+      "energy": ["calm"]
+    },
+    {
+      "id": "scramble",
+      "title": "Word scramble",
+      "emoji": "🔤",
+      "description": "Unscramble the letters before the timer runs out. Hints available if they get stuck.",
+      "minutes": ["2", "5", "10", "15+"],
+      "ages": ["8-11", "11-14", "14-17"],
+      "groups": ["class", "teams", "solo"],
+      "energy": ["lively"]
+    },
+    {
+      "id": "would-you-rather",
+      "title": "Would you rather…",
+      "emoji": "⚖️",
+      "description": "Two choices, one decision. Hands up for A or B, then ask a few pupils to explain why.",
+      "minutes": ["2", "5", "10", "15+"],
+      "ages": ["8-11", "11-14", "14-17"],
+      "groups": ["class"],
+      "energy": ["lively"]
+    },
+    {
+      "id": "odd-one-out",
+      "title": "Odd one out",
+      "emoji": "🔍",
+      "description": "Four things, one doesn’t belong. Can they spot it — and explain why?",
+      "minutes": ["2", "5", "10"],
+      "ages": ["8-11", "11-14", "14-17"],
+      "groups": ["class", "teams", "solo"],
+      "energy": ["calm"]
+    },
+    {
+      "id": "emoji",
+      "title": "Emoji puzzles",
+      "emoji": "😎",
+      "description": "Work out the common saying or phrase hidden in a line of emojis.",
+      "minutes": ["2", "5", "10"],
+      "ages": ["8-11", "11-14", "14-17"],
+      "groups": ["class", "teams", "solo"],
+      "energy": ["lively"]
+    },
+    {
+      "id": "quiz",
+      "title": "Quick-fire quiz",
+      "emoji": "⚡",
+      "description": "General knowledge questions with a built-in team scoreboard. Perfect for the end of term.",
+      "minutes": ["5", "10", "15+"],
+      "ages": ["8-11", "11-14", "14-17"],
+      "groups": ["teams"],
+      "energy": ["lively"]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "items": [
+    {
+      "title": "Riddle sheet (example)",
+      "ages": ["8-11"],
+      "description": "Ten riddles to print and hand out. Answers on the back.",
+      "pdf": "printables/riddle-sheet-example.pdf"
+    },
+    {
+      "title": "Word search: space (example)",
+      "ages": ["11-14", "14-17"],
+      "description": "A space-themed word search for early finishers.",
+      "pdf": "printables/word-search-example.pdf"
+    }
+  ]
+}

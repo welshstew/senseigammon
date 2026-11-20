@@ -1,0 +1,312 @@
+{
+  "items": [
+    {
+      "options": [
+        "Apple",
+        "Banana",
+        "Carrot",
+        "Pear"
+      ],
+      "answer": "Carrot",
+      "explanation": "A carrot is a vegetable. The others are fruits.",
+      "ages": [
+        "8-11"
+      ]
+    },
+    {
+      "options": [
+        "Dog",
+        "Cat",
+        "Shark",
+        "Rabbit"
+      ],
+      "answer": "Shark",
+      "explanation": "A shark is a fish. The others are mammals.",
+      "ages": [
+        "8-11"
+      ]
+    },
+    {
+      "options": [
+        "Red",
+        "Blue",
+        "Yellow",
+        "Green"
+      ],
+      "answer": "Green",
+      "explanation": "Red, blue and yellow are the primary colours of paint. Green is made by mixing blue and yellow.",
+      "ages": [
+        "8-11"
+      ]
+    },
+    {
+      "options": [
+        "Triangle",
+        "Square",
+        "Circle",
+        "Pentagon"
+      ],
+      "answer": "Circle",
+      "explanation": "A circle has no straight sides or corners. The others are polygons.",
+      "ages": [
+        "8-11"
+      ]
+    },
+    {
+      "options": [
+        "Spider",
+        "Ant",
+        "Bee",
+        "Butterfly"
+      ],
+      "answer": "Spider",
+      "explanation": "A spider has eight legs and isn’t an insect. The others are insects with six legs.",
+      "ages": [
+        "8-11",
+        "11-14"
+      ]
+    },
+    {
+      "options": [
+        "Penguin",
+        "Ostrich",
+        "Eagle",
+        "Emu"
+      ],
+      "answer": "Eagle",
+      "explanation": "An eagle can fly. Penguins, ostriches and emus can’t.",
+      "ages": [
+        "8-11"
+      ]
+    },
+    {
+      "options": [
+        "2",
+        "4",
+        "7",
+        "8"
+      ],
+      "answer": "7",
+      "explanation": "7 is an odd number. The others are even.",
+      "ages": [
+        "8-11"
+      ]
+    },
+    {
+      "options": [
+        "Monday",
+        "June",
+        "Friday",
+        "Sunday"
+      ],
+      "answer": "June",
+      "explanation": "June is a month. The others are days of the week.",
+      "ages": [
+        "8-11"
+      ]
+    },
+    {
+      "options": [
+        "Mercury",
+        "Venus",
+        "Moon",
+        "Mars"
+      ],
+      "answer": "Moon",
+      "explanation": "The Moon is a natural satellite. The others are planets.",
+      "ages": [
+        "8-11",
+        "11-14"
+      ]
+    },
+    {
+      "options": [
+        "Violin",
+        "Cello",
+        "Trumpet",
+        "Harp"
+      ],
+      "answer": "Trumpet",
+      "explanation": "A trumpet is a brass instrument. The others have strings.",
+      "ages": [
+        "8-11",
+        "11-14"
+      ]
+    },
+    {
+      "options": [
+        "Thames",
+        "Severn",
+        "Ben Nevis",
+        "Trent"
+      ],
+      "answer": "Ben Nevis",
+      "explanation": "Ben Nevis is a mountain. The others are UK rivers.",
+      "ages": [
+        "11-14"
+      ]
+    },
+    {
+      "options": [
+        "Iron",
+        "Copper",
+        "Plastic",
+        "Gold"
+      ],
+      "answer": "Plastic",
+      "explanation": "Plastic is not a metal.",
+      "ages": [
+        "8-11",
+        "11-14"
+      ]
+    },
+    {
+      "options": [
+        "9",
+        "16",
+        "20",
+        "25"
+      ],
+      "answer": "20",
+      "explanation": "20 is not a square number. 9, 16 and 25 are 3², 4² and 5².",
+      "ages": [
+        "11-14"
+      ]
+    },
+    {
+      "options": [
+        "Noun",
+        "Verb",
+        "Adjective",
+        "Paragraph"
+      ],
+      "answer": "Paragraph",
+      "explanation": "A paragraph is a section of writing. The others are word classes.",
+      "ages": [
+        "11-14"
+      ]
+    },
+    {
+      "options": [
+        "Oxygen",
+        "Nitrogen",
+        "Water",
+        "Helium"
+      ],
+      "answer": "Water",
+      "explanation": "Water is a compound. The others are elements.",
+      "ages": [
+        "11-14",
+        "14-17"
+      ]
+    },
+    {
+      "options": [
+        "Cardiff",
+        "Edinburgh",
+        "Belfast",
+        "Manchester"
+      ],
+      "answer": "Manchester",
+      "explanation": "Manchester is not a capital city. The others are capitals of UK nations.",
+      "ages": [
+        "11-14"
+      ]
+    },
+    {
+      "options": [
+        "3",
+        "5",
+        "9",
+        "11"
+      ],
+      "answer": "9",
+      "explanation": "9 is not a prime number (3 × 3). The others are primes.",
+      "ages": [
+        "11-14",
+        "14-17"
+      ]
+    },
+    {
+      "options": [
+        "Simile",
+        "Metaphor",
+        "Alliteration",
+        "Full stop"
+      ],
+      "answer": "Full stop",
+      "explanation": "A full stop is punctuation. The others are literary techniques.",
+      "ages": [
+        "14-17"
+      ]
+    },
+    {
+      "options": [
+        "Heart",
+        "Lungs",
+        "Femur",
+        "Liver"
+      ],
+      "answer": "Femur",
+      "explanation": "The femur is a bone. The others are organs.",
+      "ages": [
+        "11-14",
+        "14-17"
+      ]
+    },
+    {
+      "options": [
+        "Mitochondria",
+        "Nucleus",
+        "Ribosome",
+        "Neutron"
+      ],
+      "answer": "Neutron",
+      "explanation": "A neutron is part of an atom. The others are parts of a cell.",
+      "ages": [
+        "14-17"
+      ]
+    },
+    {
+      "options": [
+        "Euro",
+        "Pound",
+        "Dollar",
+        "Bitcoin"
+      ],
+      "answer": "Bitcoin",
+      "explanation": "Bitcoin is a cryptocurrency not issued by a government. The others are official currencies.",
+      "ages": [
+        "14-17"
+      ]
+    },
+    {
+      "options": [
+        "Kilogram",
+        "Gram",
+        "Tonne",
+        "Litre"
+      ],
+      "answer": "Litre",
+      "explanation": "A litre measures volume. Kilograms, grams and tonnes measure mass.",
+      "ages": [
+        "11-14",
+        "14-17"
+      ]
+    },
+    {
+      "options": [
+        "Africa",
+        "Asia",
+        "Australia",
+        "Atlantic"
+      ],
+      "answer": "Atlantic",
+      "explanation": "The Atlantic is an ocean. The others are continents.",
+      "ages": [
+        "8-11",
+        "11-14"
+      ]
+    }
+  ]
+}

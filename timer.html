@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Countdown timer — Sensei Gammon</title>
+  <meta name="description" content="A big, clear classroom countdown timer with presets and a gentle chime.">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/site.js" defer></script>
+  <script src="js/timer.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <!-- MASCOT PLACEHOLDER: swap this circle for the Sensei Gammon character later -->
+        <span class="mascot-slot" aria-hidden="true">Sensei</span>
+        <span>Sensei <span class="brand-accent">Gammon</span></span>
+      </a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Fillers</a></li>
+          <li><a href="index.html#tools">Tools</a></li>
+          <li><a href="printables.html">Printables</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap wrap--wide">
+      <div class="activity-top">
+        <a class="back-link" href="index.html">← Back to all fillers</a>
+        <h1 class="activity-title"><span aria-hidden="true">⏱️</span> Countdown timer</h1>
+        <span class="spacer"></span>
+        <button type="button" class="btn btn--ghost btn--small" id="fs-btn" aria-pressed="false">⛶ Fullscreen</button>
+      </div>
+
+      <section class="stage" id="stage" aria-label="Timer">
+        <div class="board">
+          <div class="controls" role="group" aria-label="Presets" id="presets">
+            <button type="button" class="chip" data-mins="1" aria-pressed="false">1 min</button>
+            <button type="button" class="chip" data-mins="2" aria-pressed="false">2 min</button>
+            <button type="button" class="chip" data-mins="5" aria-pressed="true">5 min</button>
+            <button type="button" class="chip" data-mins="10" aria-pressed="false">10 min</button>
+          </div>
+          <p class="timer-digits" id="digits" role="timer" aria-live="off">5:00</p>
+          <div class="progress" aria-hidden="true"><span id="bar"></span></div>
+          <p class="visually-hidden" id="timer-status" aria-live="assertive"></p>
+          <div class="controls">
+            <button type="button" class="btn btn--coral" id="start-btn">▶ Start</button>
+            <button type="button" class="btn btn--ghost" id="reset-btn">↺ Reset</button>
+            <button type="button" class="btn btn--ghost" id="mute-btn" aria-pressed="false">🔔 Sound on</button>
+          </div>
+          <div class="controls">
+            <label class="check" for="custom-mins">Custom minutes
+              <input type="number" id="custom-mins" min="1" max="99" value="3" style="width:5.5rem">
+            </label>
+            <button type="button" class="btn btn--ghost btn--small" id="custom-btn">Set</button>
+          </div>
+        </div>
+        <p class="kbd-hint"><kbd>Space</kbd> start / pause · <kbd>R</kbd> reset · <kbd>M</kbd> mute · <kbd>F</kbd> fullscreen</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <a class="coffee-btn" data-coffee href="https://buymeacoffee.com/BMC_USERNAME" target="_blank" rel="noopener">☕ Saved your lesson? Buy Sensei a coffee</a>
+      <ul class="footer-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="printables.html">Printables</a></li>
+      </ul>
+      <p class="footer-small">© <span id="year">2026</span> Sensei Gammon · Free for teachers · No cookies, no tracking, no data collected.</p>
+    </div>
+  </footer>
+</body>
+</html>

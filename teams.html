@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Team generator — Sensei Gammon</title>
+  <meta name="description" content="Split your class into random teams in one click. Names are kept in memory only.">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/site.js" defer></script>
+  <script src="js/teams.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <!-- MASCOT PLACEHOLDER: swap this circle for the Sensei Gammon character later -->
+        <span class="mascot-slot" aria-hidden="true">Sensei</span>
+        <span>Sensei <span class="brand-accent">Gammon</span></span>
+      </a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Fillers</a></li>
+          <li><a href="index.html#tools">Tools</a></li>
+          <li><a href="printables.html">Printables</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap wrap--wide">
+      <div class="activity-top">
+        <a class="back-link" href="index.html">← Back to all fillers</a>
+        <h1 class="activity-title"><span aria-hidden="true">👥</span> Team generator</h1>
+        <span class="spacer"></span>
+        <button type="button" class="btn btn--ghost btn--small" id="fs-btn" aria-pressed="false">⛶ Fullscreen</button>
+      </div>
+
+      <div class="tool-grid">
+        <section class="panel" aria-labelledby="names-title">
+          <h2 id="names-title">Your class list</h2>
+          <label for="names">Paste names, one per line (or separated by commas)</label>
+          <textarea id="names" spellcheck="false" placeholder="Amira&#10;Ben&#10;Chloe&#10;Dev"></textarea>
+          <div class="row">
+            <label class="check" for="mode-count"><input type="radio" name="mode" id="mode-count" value="count" checked> Number of teams</label>
+            <label class="check" for="mode-size"><input type="radio" name="mode" id="mode-size" value="size"> People per team</label>
+          </div>
+          <div class="row">
+            <label for="amount" class="visually-hidden">How many</label>
+            <input type="number" id="amount" min="2" max="30" value="4" style="width:6rem">
+            <button type="button" class="btn btn--coral" id="make-btn">🎲 Make teams</button>
+          </div>
+          <p class="note">No names to hand? Leave the box empty and Sensei will make numbered teams for this many pupils:</p>
+          <div class="row">
+            <label for="headcount" style="margin:0">Pupils</label>
+            <input type="number" id="headcount" min="2" max="60" value="30" style="width:6rem">
+          </div>
+          <p class="note">🔒 Names stay in this browser tab only and are never saved or sent anywhere.</p>
+        </section>
+        <section class="stage" id="stage" aria-label="Teams">
+          <div class="board" id="team-board" aria-live="polite">
+            <p class="big-text">Your teams will appear here.</p>
+          </div>
+          <p class="kbd-hint"><kbd>Space</kbd> shuffle again · <kbd>F</kbd> fullscreen</p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <a class="coffee-btn" data-coffee href="https://buymeacoffee.com/BMC_USERNAME" target="_blank" rel="noopener">☕ Saved your lesson? Buy Sensei a coffee</a>
+      <ul class="footer-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="printables.html">Printables</a></li>
+      </ul>
+      <p class="footer-small">© <span id="year">2026</span> Sensei Gammon · Free for teachers · No cookies, no tracking, no data collected.</p>
+    </div>
+  </footer>
+</body>
+</html>
