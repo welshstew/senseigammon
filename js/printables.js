@@ -7,7 +7,7 @@
   var items = [];
   var band = '';
 
-  function asList(v) { return Array.isArray(v) ? v : (v ? [v] : []); }
+  var asList = SG.toList;
 
   function buildSwitch() {
     [{ id: '', label: 'All ages' }].concat(SG.AGE_BANDS).forEach(function (o) {
@@ -35,7 +35,7 @@
           p.description ? el('p', { text: p.description }) : null,
           el('span', { class: 'tag tag--age', text: 'Ages ' + asList(p.ages).map(SG.ageLabel).join(', ') })
         ),
-        el('a', { class: 'btn', href: p.pdf, target: '_blank', rel: 'noopener', text: '⬇ Download PDF' })
+        el('a', { class: 'btn', href: SG.relPath(p.pdf), target: '_blank', rel: 'noopener', text: '⬇ Download PDF' })
       ));
     });
   }

@@ -1,0 +1,386 @@
+# Pages CMS configuration — https://pagescms.org
+# Lets the teacher edit everything in /content/ through simple forms,
+# instead of editing JSON by hand. Sign in at https://app.pagescms.org
+# with GitHub and open this repository.
+
+media:
+  - name: printables
+    label: Printable PDFs
+    input: printables
+    output: printables          # relative (no leading slash) so links work on github.io/senseigammon/ too
+    extensions: [pdf]
+    rename: safe
+
+settings:
+  content: true                 # merge: never delete keys that aren't listed below
+
+content:
+  # ------------------------------------------------------------------
+  - name: riddles
+    label: Riddles
+    type: file
+    path: content/riddles.json
+    format: json
+    fields:
+      - name: items
+        label: Riddles
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{index}. {question}"
+        fields:
+          - name: question
+            label: Riddle
+            type: text
+            required: true
+          - name: answer
+            label: Answer
+            type: string
+            required: true
+          - name: ages
+            label: Age bands
+            description: Tick every age band this suits.
+            type: select
+            required: true
+            options:
+              multiple: true
+              values:
+                - { name: "8-11", label: "Ages 8–11" }
+                - { name: "11-14", label: "Ages 11–14" }
+                - { name: "14-17", label: "Ages 14–17" }
+
+  # ------------------------------------------------------------------
+  - name: quiz
+    label: Quick-fire quiz
+    type: file
+    path: content/quiz.json
+    format: json
+    fields:
+      - name: items
+        label: Quiz questions
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{index}. {question}"
+        fields:
+          - name: question
+            label: Question
+            type: text
+            required: true
+          - name: answer
+            label: Answer
+            type: string
+            required: true
+          - name: ages
+            label: Age bands
+            description: Tick every age band this suits.
+            type: select
+            required: true
+            options:
+              multiple: true
+              values:
+                - { name: "8-11", label: "Ages 8–11" }
+                - { name: "11-14", label: "Ages 11–14" }
+                - { name: "14-17", label: "Ages 14–17" }
+
+  # ------------------------------------------------------------------
+  - name: scramble
+    label: Word scramble
+    type: file
+    path: content/scramble.json
+    format: json
+    fields:
+      - name: items
+        label: Words
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{index}. {word}"
+        fields:
+          - name: word
+            label: Word
+            description: One word, letters only. It will be shown in capitals and jumbled up.
+            type: string
+            required: true
+            pattern:
+              regex: "^[A-Za-z]+$"
+              message: "Use a single word with letters only (no spaces or punctuation)."
+          - name: hint
+            label: Hint (optional)
+            type: string
+          - name: seconds
+            label: Seconds on the timer (optional)
+            description: Leave empty for the normal 45 seconds.
+            type: number
+            options: { min: 10, max: 300 }
+          - name: ages
+            label: Age bands
+            description: Tick every age band this suits.
+            type: select
+            required: true
+            options:
+              multiple: true
+              values:
+                - { name: "8-11", label: "Ages 8–11" }
+                - { name: "11-14", label: "Ages 11–14" }
+                - { name: "14-17", label: "Ages 14–17" }
+
+  # ------------------------------------------------------------------
+  - name: would-you-rather
+    label: Would you rather
+    type: file
+    path: content/would-you-rather.json
+    format: json
+    fields:
+      - name: items
+        label: Questions
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{index}. {optionA} / {optionB}"
+        fields:
+          - name: optionA
+            label: Option A
+            type: string
+            required: true
+          - name: optionB
+            label: Option B
+            type: string
+            required: true
+          - name: ages
+            label: Age bands
+            description: Tick every age band this suits.
+            type: select
+            required: true
+            options:
+              multiple: true
+              values:
+                - { name: "8-11", label: "Ages 8–11" }
+                - { name: "11-14", label: "Ages 11–14" }
+                - { name: "14-17", label: "Ages 14–17" }
+
+  # ------------------------------------------------------------------
+  - name: odd-one-out
+    label: Odd one out
+    type: file
+    path: content/odd-one-out.json
+    format: json
+    fields:
+      - name: items
+        label: Puzzles
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{index}. Answer: {answer}"
+        fields:
+          - name: options
+            label: The four items
+            description: Exactly four. They are shown in a random order.
+            type: string
+            required: true
+            list: { min: 4, max: 4 }
+          - name: answer
+            label: The odd one out
+            description: Must be spelled exactly the same as one of the four items above.
+            type: string
+            required: true
+          - name: explanation
+            label: Why it’s the odd one out
+            type: text
+            required: true
+          - name: ages
+            label: Age bands
+            description: Tick every age band this suits.
+            type: select
+            required: true
+            options:
+              multiple: true
+              values:
+                - { name: "8-11", label: "Ages 8–11" }
+                - { name: "11-14", label: "Ages 11–14" }
+                - { name: "14-17", label: "Ages 14–17" }
+
+  # ------------------------------------------------------------------
+  - name: emoji
+    label: Emoji puzzles
+    type: file
+    path: content/emoji.json
+    format: json
+    fields:
+      - name: items
+        label: Puzzles
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{index}. {emojis} = {answer}"
+        fields:
+          - name: emojis
+            label: Emojis
+            description: Common sayings and phrases only, please — no film titles.
+            type: string
+            required: true
+          - name: answer
+            label: Answer
+            type: string
+            required: true
+          - name: hint
+            label: Hint (optional)
+            type: string
+          - name: ages
+            label: Age bands
+            description: Tick every age band this suits.
+            type: select
+            required: true
+            options:
+              multiple: true
+              values:
+                - { name: "8-11", label: "Ages 8–11" }
+                - { name: "11-14", label: "Ages 11–14" }
+                - { name: "14-17", label: "Ages 14–17" }
+
+  # ------------------------------------------------------------------
+  - name: printables
+    label: Printables
+    type: file
+    path: content/printables.json
+    format: json
+    fields:
+      - name: items
+        label: Printables
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{index}. {title}"
+        fields:
+          - name: title
+            label: Title
+            type: string
+            required: true
+          - name: description
+            label: Short description (optional)
+            type: text
+          - name: pdf
+            label: PDF file
+            description: Upload or choose a PDF. It is stored in the printables folder.
+            type: file
+            required: true
+            options:
+              media: printables
+              extensions: [pdf]
+          - name: ages
+            label: Age bands
+            description: Tick every age band this suits.
+            type: select
+            required: true
+            options:
+              multiple: true
+              values:
+                - { name: "8-11", label: "Ages 8–11" }
+                - { name: "11-14", label: "Ages 11–14" }
+                - { name: "14-17", label: "Ages 14–17" }
+
+  # ------------------------------------------------------------------
+  - name: activities
+    label: Homepage cards (advanced)
+    type: file
+    path: content/activities.json
+    format: json
+    fields:
+      - name: items
+        label: Activity cards
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title}"
+        fields:
+          - name: id
+            label: Activity type
+            description: Which activity this card opens. Each type should appear only once.
+            type: select
+            required: true
+            options:
+              values:
+                - { name: riddles, label: Riddles }
+                - { name: scramble, label: Word scramble }
+                - { name: would-you-rather, label: Would you rather }
+                - { name: odd-one-out, label: Odd one out }
+                - { name: emoji, label: Emoji puzzles }
+                - { name: quiz, label: Quick-fire quiz }
+          - name: title
+            label: Card title
+            type: string
+            required: true
+          - name: emoji
+            label: Card emoji
+            type: string
+            required: true
+          - name: description
+            label: Card description
+            type: text
+            required: true
+          - name: minutes
+            label: Time it fits
+            type: select
+            required: true
+            options:
+              multiple: true
+              values:
+                - { name: "2", label: "2 minutes" }
+                - { name: "5", label: "5 minutes" }
+                - { name: "10", label: "10 minutes" }
+                - { name: "15+", label: "15+ minutes" }
+          - name: ages
+            label: Age bands
+            description: Tick every age band this suits.
+            type: select
+            required: true
+            options:
+              multiple: true
+              values:
+                - { name: "8-11", label: "Ages 8–11" }
+                - { name: "11-14", label: "Ages 11–14" }
+                - { name: "14-17", label: "Ages 14–17" }
+          - name: groups
+            label: Group
+            type: select
+            required: true
+            options:
+              multiple: true
+              values:
+                - { name: class, label: Whole class }
+                - { name: teams, label: Teams }
+                - { name: solo, label: Quiet / solo }
+          - name: energy
+            label: Energy
+            type: select
+            required: true
+            options:
+              multiple: true
+              values:
+                - { name: calm, label: Calm }
+                - { name: lively, label: Lively }
+
+  # ------------------------------------------------------------------
+  - name: site
+    label: Site settings
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - name: siteName
+        label: Site name
+        type: string
+        required: true
+      - name: buyMeACoffeeUsername
+        label: Buy Me a Coffee username
+        description: Just the username — the part after buymeacoffee.com/
+        type: string
+        required: true

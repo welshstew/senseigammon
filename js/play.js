@@ -67,9 +67,9 @@
 
     'odd-one-out': {
       file: 'odd-one-out.json', title: 'Odd one out', emoji: '🔍', noun: 'Puzzle',
-      valid: function (it) { return Array.isArray(it.options) && it.options.length >= 3 && it.answer; },
+      valid: function (it) { return SG.toList(it.options).length >= 3 && it.answer; },
       body: function (it, ctx) {
-        if (!ctx.order) ctx.order = SG.shuffle(it.options);
+        if (!ctx.order) ctx.order = SG.shuffle(SG.toList(it.options));
         var answer = String(it.answer).trim().toLowerCase();
         return [
           el('p', { class: 'wyr-lead', text: 'Which one is the odd one out?' }),
@@ -278,7 +278,7 @@
   function filtered() {
     return allItems.filter(function (it) {
       if (!band) return true;
-      var ages = Array.isArray(it.ages) ? it.ages : (it.ages ? [it.ages] : []);
+      var ages = SG.toList(it.ages);
       return !ages.length || ages.indexOf(band) !== -1;
     });
   }

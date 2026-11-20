@@ -32,11 +32,7 @@
   var randomNote = document.getElementById('random-note');
   var clearBtn = document.getElementById('clear-filters');
 
-  function asList(v) {
-    if (Array.isArray(v)) return v.map(String);
-    if (v === undefined || v === null || v === '') return [];
-    return [String(v)];
-  }
+  var asList = SG.toList;
 
   function readUrl() {
     var params = new URLSearchParams(location.search);

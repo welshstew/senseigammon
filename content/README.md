@@ -6,6 +6,8 @@ Every file is a JSON object with a single `items` list, except `site.json`. Keep
 
 Text fields are plain text (no HTML). Emojis are fine.
 
+These files are edited through Pages CMS using the forms defined in `/.pages.yml`. If you add or rename a field here, update `.pages.yml` to match.
+
 ---
 
 ## `site.json`: site settings

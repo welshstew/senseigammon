@@ -117,6 +117,20 @@
     return tag === 'input' || tag === 'textarea' || tag === 'select' || t.isContentEditable;
   }
 
+  /** Accept a list (["8-11","11-14"]), a single value, or a comma string ("8-11, 11-14"). */
+  function toList(v) {
+    if (Array.isArray(v)) return v.map(function (x) { return String(x).trim(); }).filter(Boolean);
+    if (v === undefined || v === null || v === '') return [];
+    return String(v).split(',').map(function (x) { return x.trim(); }).filter(Boolean);
+  }
+
+  /** Make a content path relative to the site root ("/printables/x.pdf" -> "printables/x.pdf"). */
+  function relPath(p) {
+    p = String(p || '').trim();
+    if (/^[a-z]+:\/\//i.test(p)) return p;   // full URL: leave alone
+    return p.replace(/^(\.\/|\/)+/, '');
+  }
+
   function ageLabel(id) {
     for (var i = 0; i < AGE_BANDS.length; i++) if (AGE_BANDS[i].id === id) return AGE_BANDS[i].label;
     return id;
@@ -176,6 +190,8 @@
     bindFullscreenButton: bindFullscreenButton,
     isTyping: isTyping,
     ageLabel: ageLabel,
+    toList: toList,
+    relPath: relPath,
     loadError: loadError,
     unlockAudio: unlockAudio,
     chime: chime
